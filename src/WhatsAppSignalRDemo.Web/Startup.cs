@@ -8,9 +8,8 @@ namespace WhatsAppSignalRDemo.Web
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             DefaultFilesOptions options = new DefaultFilesOptions();
-                options.DefaultFileNames.Add("index.html");
+            options.DefaultFileNames.Add("index.html");
             app.UseDefaultFiles(options);
-
             app.UseStaticFiles();
         }
     }
